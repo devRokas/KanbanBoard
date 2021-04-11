@@ -1,0 +1,135 @@
+@import "~bootstrap";
+@import "~font-awesome";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body, .login_container, .row {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+.login_form {
+  margin-top: 2em;
+  overflow-x: -moz-scrollbars-none;
+}
+
+.app {
+  height: 96vh;
+  background-color: rgb(255,250,247);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  transition: all 0.2s linear;
+  flex-flow: column;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  //overflow-y: auto;
+}
+
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#user_Register {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+//#board-title {
+//  color: whitesmoke;
+//  font-size: medium;
+//  background-color: rgb(52,58,64);
+//  border:none;
+//}
+
+#board-title {
+  color: whitesmoke;
+  font-size: medium;
+  background-color: rgba(0, 0, 0, 0.5);
+  border:none;
+}
+
+#board-title::placeholder {
+  color: whitesmoke;
+}
+
+#home-link {
+  color: whitesmoke;
+}
+
+textarea, input {
+  outline: none;
+}
+
+.board-column {
+  height: 7em;
+}
+
+.board-card {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  border:none;
+}
+
+.board-card:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#add-board-card {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+#add-board-card:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.background-select {
+  width: 3em;
+  height: 3em;
+  border-radius: 3px;
+  background-size: cover;
+  margin: 3px;
+  border: none;
+}
+
+.selected {
+  //border: 2px solid darkslategray;
+}
+
+body {
+  background-color: ghostwhite;
+}
+
+.navbar-custom {
+  height: 4vh;
+}
