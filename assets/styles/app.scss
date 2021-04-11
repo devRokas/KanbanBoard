@@ -36,6 +36,172 @@ textarea {
   //overflow-y: auto;
 }
 
+#lists {
+  height: 94vh;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  //overflow-y: auto;
+}
+
+#lists .list_placeholders {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  width: 100%;
+  min-width: 250px;
+  max-width: 300px;
+  height: 100%;
+  min-height: 100px;
+  padding: 8px;
+  transition: all 0.2s linear;
+  border-radius: 2px;
+}
+
+#lists .list_placeholders .list {
+  position: relative;
+  width: 100%;
+  min-width: 150px;
+  max-width: 300px;
+  height: auto;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px 8px 0 8px;
+  transition: all 0.2s linear;
+}
+
+#lists .list_placeholders .list .list-item {
+  position: relative;
+  background-color: #F3F3F3;
+  border-radius: 3px;
+  padding: 23px 10px 10px 10px;
+  text-align: left;
+  margin: 6px 0 4px 0;
+  min-width: 150px;
+  max-width: 300px;
+  color: rgba(0, 0, 0, 1);
+  overflow-wrap: break-word;
+}
+
+#lists .list_placeholders .list .list-item .list-item-text {
+  outline: none;
+}
+
+.input-container{
+  padding: 8px;
+  width: 100%;
+  min-width: 150px;
+  max-width: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.new-list-input-container{
+  padding: 6px 8px;
+  min-width: 150px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.input_item {
+  background-color: transparent;
+  //padding: 15px 20px;
+  text-align: left;
+  border: none;
+  width: 100%;
+  //min-width: 150px;
+  //max-width: 300px;
+  color: white;
+  font-size: 16px;
+  padding: 5px 5px 0 5px;
+}
+
+.input_item:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+.input_item::placeholder {
+  color: white;
+}
+
+.input_item:focus {
+  outline: none;
+}
+
+.input_item:focus::placeholder {
+  color: transparent;
+}
+
+.list-heading {
+  padding: 5px 5px 0 5px;
+  font-size: medium;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.list-heading:focus {
+  color: rgba(0, 0, 0, 1);
+  background-color: whitesmoke;
+}
+
+.edit-button, .delete-button, .check-button {
+  display: none;
+}
+
+.delete-button {
+  position:absolute;
+  top:0;
+  right:0;
+  margin: 4px;
+  padding: 2px 3px;
+}
+
+.delete-button-invisible {
+  position:absolute;
+  top:0;
+  right:0;
+  margin: 4px;
+  padding: 2px 3px;
+  visibility: hidden;
+}
+
+.check-button {
+  position:absolute;
+  top:0;
+  right: 0;
+  margin: 4px;
+  padding: 2px 3px;
+}
+
+.edit-button {
+  position:absolute;
+  top: 0;
+  right: 20px;
+  margin: 4px;
+  padding: 3px;
+}
+
+.edit-button-invisible {
+  position:absolute;
+  top: 0;
+  right: 20px;
+  margin: 4px;
+  padding: 3px;
+  visibility: hidden;
+}
+
+.reset-button {
+  position:absolute;
+  top: 0;
+  right: 0;
+  margin: 4px;
+  padding: 2px 3px;
+}
+
 /*scrollbar*/
 /* width */
 ::-webkit-scrollbar {
