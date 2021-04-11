@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-md navbar-custom navbar-dark bg-dark sticky-top p-0">
+    <div class="navbar-brand col-4">
+        <a class="col-2 col-sm-2 col-md-2 mr-0" id="home-link" href="{{ path('index_page') }}">Kanban Board</a>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            {% if is_granted('ROLE_USER') %}
+                {% if app.request.get('_route') == 'main_page' %}
+                    <li class="nav-item text-nowrap">
+                        <a class="nav-link"
+                           href="{{ path('index_page') }}">Boards</a>
+                    </li>
+                {% endif %}
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link"
+                       href="#">{{ app.user.username }} </a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link"
+                       href="{{ path('security_logout') }}">Sign out</a>
+                </li>
+            {% else %}
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link"
+                       href="{{ path('security_login') }}">Login</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link"
+                       href="{{ path('user_register') }}">Register</a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
