@@ -17,6 +17,7 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class BoardsPageController extends AbstractController
 {
+    
     /**
      * @Route("/", name="index_page")
      * @param Request $request
