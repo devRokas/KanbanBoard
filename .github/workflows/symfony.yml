@@ -1,9 +1,7 @@
 # https://help.github.com/en/actions
 name: Full CI process for Symfony 5
-on:
-  push:
-    branches:
-      - develop
+on: [push, pull_request]
+
 jobs:
   symfony:
     name: Symfony 5.2 (PHP ${{ matrix.php-versions }})
