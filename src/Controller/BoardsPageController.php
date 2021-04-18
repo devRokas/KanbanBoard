@@ -15,7 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
  * @Security("is_granted('ROLE_USER')")
  */
-class BoardsPageController extends AbstractController
+class  extends AbstractController
 {
     /**
      * @Route("/", name="index_page")
